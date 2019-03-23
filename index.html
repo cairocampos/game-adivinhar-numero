@@ -6,10 +6,21 @@
 	</head>
 	<body>
 		
-		<div id="n1">0</div>
-		<input type="text" id="n2">
-		<div style="clear:both;"></div>
-		<button onclick="verificar();">Verificar</button>	
+		<main>
+			<h1 style="margin-bottom: 0">JOGO</h1>
+			<h2 style="margin-top: 0">Adivinhe o número por trás da caixa!</h2>
+			<hr>
+			<p><strong>DICA:</strong> O número esté entre <strong>0</strong> e <strong>10</strong></p>
+			<div class="numbers">
+				<div id="n1">0</div>
+				<div id="box-question">?</div>
+				<input type="text" id="n2" autofocus>
+			</div>
+			<div style="clear:both;"></div>
+			<div id="result"></div>
+			<button id="verificador" onclick="verificar();">Verificar</button>
+			<button id="limpador" onclick="update();">Limpar</button>
+		</main>	
 	
 		<script type="text/javascript" src="assets/js/app.js"></script>
 	</body>
